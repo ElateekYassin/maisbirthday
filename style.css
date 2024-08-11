@@ -1,0 +1,88 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px; /* Increased max-width for larger cards */
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px; /* Increased font size */
+    color: #333;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px; /* Increased margin for larger spacing */
+    padding: 20px; /* Increased padding for larger cards */
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background-color: #f0f0f0;
+}
+
+.card:last-child {
+    margin-bottom: 0;
+}
+
+.image {
+    width: 150px; /* Increased width for larger images */
+    height: 150px; /* Increased height for larger images */
+    background-color: #ccc;
+    border-radius: 10px;
+    margin-right: 20px; /* Increased margin for spacing */
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #555;
+    font-weight: bold;
+    text-align: center;
+}
+
+.text {
+    flex-grow: 1;
+    font-size: 18px; /* Increased font size for more readability */
+    color: #555;
+    display: flex;
+    align-items: center; /* Center vertically within the card */
+    text-align: left; /* Ensure text alignment is to the left */
+    padding: 10px;
+}
+
+.text p {
+    margin: 0;
+}
+
+@media (max-width: 600px) {
+    .container {
+        max-width: 100%; /* Ensure container fits smaller screens */
+    }
+
+    .image {
+        width: 100px; /* Reduce image size for smaller screens */
+        height: 100px;
+    }
+
+    .text {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+}
