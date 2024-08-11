@@ -15,6 +15,9 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px; /* Added margin for better spacing on small screens */
+    width: 90%; /* Adjust width to fit smaller screens */
+    max-width: 500px; /* Maximum width for larger screens */
 }
 
 h1 {
@@ -30,6 +33,6 @@ h1 {
 
 video {
     width: 100%;
-    max-width: 500px; /* Adjust to your preferred maximum width */
+    max-width: 320px; /* Smaller max-width for the videos */
     height: auto;
 }
