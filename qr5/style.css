@@ -32,9 +32,8 @@ h1 {
     gap: 10px;
 }
 
-video {
+iframe {
     width: 100%;
-    max-width: 320px; /* Max width for videos */
-    height: 180px; /* Fixed height for videos to ensure they fit well */
-    object-fit: cover; /* Ensure videos cover the set height properly */
+    height: 180px; /* Fixed height for videos */
+    border: none;
 }
