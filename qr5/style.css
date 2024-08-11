@@ -15,14 +15,15 @@ body {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px; /* Added margin for better spacing on small screens */
-    width: 90%; /* Adjust width to fit smaller screens */
-    max-width: 500px; /* Maximum width for larger screens */
+    margin: 10px; /* Space around the container */
+    width: 90%; /* Fit smaller screens */
+    max-width: 360px; /* Maximum width to ensure visibility */
 }
 
 h1 {
-    margin-bottom: 20px;
+    margin-bottom: 15px; /* Space below the heading */
     color: #333;
+    font-size: 1.5em; /* Adjust font size for better visibility */
 }
 
 .video-container {
@@ -33,6 +34,7 @@ h1 {
 
 video {
     width: 100%;
-    max-width: 320px; /* Smaller max-width for the videos */
-    height: auto;
+    max-width: 320px; /* Max width for videos */
+    height: 180px; /* Fixed height for videos to ensure they fit well */
+    object-fit: cover; /* Ensure videos cover the set height properly */
 }
